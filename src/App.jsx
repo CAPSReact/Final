@@ -1,9 +1,9 @@
-import Testpage from "./pages/testpage";
+import House from "./pages/views/House";
 
 function App() {
   return (
     <>
-      <Testpage />
+      <House />
     </>
   );
 }
