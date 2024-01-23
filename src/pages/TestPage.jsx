@@ -1,10 +1,12 @@
-import Test from "../components/Test";
+import { ButtonStyle, Circle } from "../styles/style";
 
-export default function Testpage() {
+export default function TestPage() {
   return (
     <div>
-      page입니다.
-      <Test />
+      <button>버튼입니다.</button>
+      <ButtonStyle>theme 버튼입니다.</ButtonStyle>
+      <input type="text" value="input입니다." />
+      <Circle />
     </div>
   );
 }
