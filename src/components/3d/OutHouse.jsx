@@ -10,7 +10,7 @@ Title: Stylized house
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
+export function OutHouse(props) {
   const { nodes, materials } = useGLTF("models/house/scene.gltf");
   return (
     <group {...props} dispose={null}>
