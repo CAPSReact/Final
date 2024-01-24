@@ -13,8 +13,8 @@ const FadeIn = () => keyframes`
 export const Wrapper = styled.div`
   position: relative;
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   min-height: 99vh;
   display: flex;
   flex-direction: column;
@@ -25,8 +25,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Box = styled.div`
-  margin-top: 50vh;
-  width: 100vw;
+  margin-top: 200px;
+  width: 100%;
+  max-width: 390px;
   height: 100vh;
 `;
 
