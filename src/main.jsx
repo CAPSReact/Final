@@ -4,12 +4,13 @@ import GlobalStyle from "./styles/GlobalStyle.js";
 import theme from "./styles/theme.js";
 import { ThemeProvider } from "styled-components";
 import App from "./App.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <BrowserRouter>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
-  </React.StrictMode>
+  </BrowserRouter>
 );
