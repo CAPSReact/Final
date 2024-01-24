@@ -14,7 +14,7 @@ export function OutHouse(props) {
   const { nodes, materials } = useGLTF("models/house/scene.gltf");
   return (
     <group {...props} dispose={null}>
-      <group scale={4}>
+      <group scale={3.5}>
         <mesh
           geometry={nodes.LP1_house_0.geometry}
           material={materials.house}

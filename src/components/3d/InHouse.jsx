@@ -14,7 +14,7 @@ export function InHouse(props) {
   const { nodes, materials } = useGLTF("models/inside/scene.gltf");
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0.064, 0]} scale={15}>
+      <group position={[0, 0.064, 0]} scale={85}>
         <group position={[0.742, 0.946, -0.479]}>
           <mesh
             geometry={nodes.Object_9.geometry}
