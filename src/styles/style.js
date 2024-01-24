@@ -10,6 +10,7 @@ const FadeIn = () => keyframes`
   }
 `;
 
+/* 전체 */
 export const Wrapper = styled.div`
   position: relative;
   margin: 0 auto;
@@ -19,23 +20,72 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 390px;
-  background-color: #f9faff;
+  background-color: ${({ theme }) => theme.colors.white};
   align-items: center;
   text-align: center;
 `;
 
-export const Box = styled.div`
-  margin-top: 200px;
-  width: 100%;
-  max-width: 390px;
-  height: 100vh;
+export const ButtonStyle = styled.div`
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: ${({ theme }) => theme.colors.marin};
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: ${(props) => props.top || "50px"};
 `;
 
-export const ButtonStyle = styled.div`
-  width: 100px;
-  height: 50px;
+export const Title = styled.div`
+  color: ${({ theme }) => theme.colors.marin};
   text-align: center;
-  background-color: ${({ theme }) => theme.colors.darkGray};
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: ${(props) => props.top};
+`;
+
+export const Introduce = styled.div`
+  color: ${({ theme }) => theme.colors.marin};
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+`;
+
+export const Select = styled.select`
+  width: 80%;
+  height: 40px;
+  border: 1px solid ${({ theme }) => theme.colors.marin};
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: ${(props) => props.top};
+  font-size: 15px;
+  color: ${({ theme }) => theme.colors.marin};
+  margin-top: 5px;
+  outline: none;
+`;
+
+export const Label = styled.label`
+  width: 75%;
+  text-align: left;
+  color: ${({ theme }) => theme.colors.marin};
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: ${(props) => props.top};
+`;
+
+export const Input = styled.input`
+  width: 75%;
+  border: 1px solid ${({ theme }) => theme.colors.marin};
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  color: ${({ theme }) => theme.colors.marin};
+
+  ::placeholder {
+    color: ${({ theme }) => theme.colors.gray};
+  }
 `;
 
 export const Circle = styled.div`
@@ -44,3 +94,13 @@ export const Circle = styled.div`
   background-color: ${({ theme }) => theme.colors.gray};
   animation: ${FadeIn()} 2s ease-out;
 `;
+
+/* canvas 속성 */
+export const Box = styled.div`
+  margin-top: 200px;
+  width: 100%;
+  max-width: 390px;
+  height: 100vh;
+`;
+
+/* sign */
