@@ -34,6 +34,7 @@ export const ButtonStyle = styled.div`
   font-size: 18px;
   border-radius: 10px;
   margin-top: ${(props) => props.top || "50px"};
+  cursor: pointer;
 `;
 
 export const Title = styled.div`
@@ -104,3 +105,20 @@ export const Box = styled.div`
 `;
 
 /* sign */
+
+/* 3d pages */
+export const InGameButtonStyle = styled.div`
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: ${({ theme }) => theme.colors.marin};
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 18px;
+  border-radius: 10px;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+`;
