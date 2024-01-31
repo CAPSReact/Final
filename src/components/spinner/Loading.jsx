@@ -31,7 +31,6 @@ const LoadingContainer = styled.div`
 `;
 
 export default function Loading({ loadingText }) {
-  // 룰렛으로 데이터 전달
   return (
     <Wrapper>
       <LoadingContainer>
