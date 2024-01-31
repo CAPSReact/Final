@@ -11,6 +11,8 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function InHouse(props) {
+  console.log(props.showOrigin);
+
   const { nodes, materials } = useGLTF("models/inside/scene.gltf");
   return (
     <group {...props} dispose={null}>
@@ -122,6 +124,7 @@ export function InHouse(props) {
             rotation={[0, -0.216, 0]}
           />
         </group>
+        {props.showOrigin && (
         <group position={[0.74, 0.424, 0.384]} rotation={[0, 1.523, 0]}>
           <mesh
             geometry={nodes.Object_45.geometry}
@@ -200,6 +203,7 @@ export function InHouse(props) {
             rotation={[-Math.PI, -0.188, -Math.PI]}
           />
         </group>
+        )}
         <group position={[-0.858, 0.546, 0.854]}>
           <group
             position={[-0.037, 0.027, -0.702]}
