@@ -1,10 +1,13 @@
 import { Canvas, useThree } from "@react-three/fiber";
 import { useEffect, useState } from "react";
 import { OrbitControls } from "@react-three/drei";
-import { Wrapper, Box } from "../../styles/style";
+import { Wrapper, Box, InGameButtonStyle } from "../../styles/style";
 import { OutHouse } from "../../components/3d/OutHouse";
+import { useNavigate } from "react-router-dom";
 
 export default function House() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Wrapper>
@@ -18,6 +21,9 @@ export default function House() {
               <OutHouse />
             </group>
           </Canvas>
+          <InGameButtonStyle onClick={() => {
+            navigate("/inside");
+          }}>입장하기</InGameButtonStyle>
         </Box>
       </Wrapper>
     </>
