@@ -1,16 +1,18 @@
 import styled from "styled-components";
 import Item from "../../components/board/Item";
+import { useSelector } from 'react-redux';
 
 export default function Board() {
+  const items = useSelector((state) => state.list.value);
+
   return (
   <Wrapper>
     <BoardBox>
     <Title>빵 보관함</Title>
     <BreadList>
-    <Item />
-    <Item />
-    <Item />
-    <Item />
+    {items.map((item) => (
+        <Item key={item.id} date={item.date} />
+      ))}
       </BreadList>
     </BoardBox>
   </Wrapper>
@@ -50,7 +52,6 @@ const BreadList = styled.div`
 padding: 30px;
 width: 80%;
 height: 60%;
-background-color: ${({ theme }) => theme.colors.white};
 display: grid;
 grid-template-columns: repeat(1, 1fr); // 1열로 내용을 배치
 grid-gap: 10px; // 항목 간의 간격 설정
