@@ -43,6 +43,7 @@ color: ${({ theme }) => theme.colors.marin};
 
 const BoardBox = styled.div`
 width: 80%;
+max-height: 80%;
 background-color: ${({ theme }) => theme.colors.white};
 border: 1px solid  ${({ theme }) => theme.colors.black};;
 border-radius: 15px;
@@ -51,7 +52,7 @@ border-radius: 15px;
 const BreadList = styled.div`
 padding: 30px;
 width: 80%;
-height: 60%;
+height: 70%;
 display: grid;
 grid-template-columns: repeat(1, 1fr); // 1열로 내용을 배치
 grid-gap: 10px; // 항목 간의 간격 설정
