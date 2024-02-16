@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
   min-height: 99vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 390px;
   background-color: ${({ theme }) => theme.colors.white};
   align-items: center;
@@ -98,7 +99,6 @@ export const Circle = styled.div`
 
 /* canvas 속성 */
 export const Box = styled.div`
-  margin-top: 200px;
   width: 100%;
   max-width: 390px;
   height: 100vh;
