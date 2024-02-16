@@ -56,31 +56,35 @@ const BtnBox = styled.div`
 `;
 
 const InSideBtn = styled.div`
-  width: 30px;
-  height: 30px;
-  background: url(${InsideImage});
-  background-repeat: no-repeat;
+  img {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
 `;
 
 const OutSideBtn = styled.div`
+img {
   width: 30px;
   height: 30px;
-  background: url(${OutSideImage});
   background-repeat: no-repeat;
+}
 `;
 
 const BoardBtn = styled.div`
+img {
   width: 30px;
   height: 30px;
-  background: url(${BoardImage});
   background-repeat: no-repeat;
+}
 `;
 
 const ProfileBtn = styled.div`
+img {
   width: 30px;
   height: 30px;
-  background: url(${ProfileImage});
   background-repeat: no-repeat;
+}
 `;
 
 export default function Navigation() {
@@ -94,7 +98,7 @@ export default function Navigation() {
             onClick={() => {
               navigate("/outside");
             }}
-          />
+          ><img src={OutSideImage} alt="outside-image"/></OutSideBtn>
           outside
         </BtnBox>
         <BtnBox>
@@ -102,7 +106,7 @@ export default function Navigation() {
             onClick={() => {
               navigate("/inside");
             }}
-          />
+          ><img src={InsideImage} alt="inside-image"/></InSideBtn>
           inside
         </BtnBox>
         <BtnBox>
@@ -110,7 +114,7 @@ export default function Navigation() {
             onClick={() => {
               navigate("/board");
             }}
-          />
+          ><img src={BoardImage} alt="board-image"/></BoardBtn>
           board
         </BtnBox>
         <BtnBox>
@@ -118,7 +122,7 @@ export default function Navigation() {
             onClick={() => {
               navigate("/profile");
             }}
-          />
+            ><img src={ProfileImage} alt="profile-image"/></ProfileBtn>
           profile
         </BtnBox>
       </NavigationBar>
