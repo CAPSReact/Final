@@ -20,6 +20,7 @@ export default function Board() {
 }
 
 const Wrapper = styled.div`
+box-sizing: border;
 position: relative;
 margin: 0 auto;
 width: 100vw;
@@ -42,6 +43,7 @@ color: ${({ theme }) => theme.colors.marin};
 `
 
 const BoardBox = styled.div`
+box-sizing: border;
 width: 80%;
 max-height: 80%;
 background-color: ${({ theme }) => theme.colors.white};
@@ -50,6 +52,7 @@ border-radius: 15px;
 `
 
 const BreadList = styled.div`
+box-sizing: border;
 padding: 30px;
 width: 80%;
 height: 70%;

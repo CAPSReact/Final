@@ -12,6 +12,7 @@ const FadeIn = () => keyframes`
 
 /* 전체 */
 export const Wrapper = styled.div`
+box-sizing: border;
   position: relative;
   margin: 0 auto;
   width: 100vw;
@@ -34,7 +35,7 @@ export const ButtonStyle = styled.div`
   color: ${({ theme }) => theme.colors.white};
   font-size: 18px;
   border-radius: 10px;
-  margin-top: ${(props) => props.top || "50px"};
+  margin-top: ${(props) => props.top || "20px"};
   cursor: pointer;
 `;
 
@@ -101,7 +102,8 @@ export const Circle = styled.div`
 export const Box = styled.div`
   width: 100%;
   max-width: 390px;
-  height: 100vh;
+  height: 100%;
+  box-sizing: border;
 `;
 
 /* sign */
@@ -116,7 +118,7 @@ export const InGameButtonStyle = styled.div`
   color: ${({ theme }) => theme.colors.white};
   font-size: 18px;
   border-radius: 10px;
-  bottom: 140px;
+  bottom: 300px;
   left: 0;
   right: 0;
   margin: 0 auto;
