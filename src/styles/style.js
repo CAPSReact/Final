@@ -118,7 +118,7 @@ export const InGameButtonStyle = styled.div`
   color: ${({ theme }) => theme.colors.white};
   font-size: 18px;
   border-radius: 10px;
-  bottom: 300px;
+  bottom: 200px;
   left: 0;
   right: 0;
   margin: 0 auto;

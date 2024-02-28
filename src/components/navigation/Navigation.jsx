@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   position: fixed;
   margin: 0 auto;
   width: 100%;
-  bottom: 0;
   max-height: 60px;
   min-height: 1vh;
   display: flex;
@@ -19,6 +18,8 @@ const Wrapper = styled.div`
 `;
 
 const NavigationBar = styled.div`
+position: absolute;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
