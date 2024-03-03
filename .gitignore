@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 # ignore test
-.yarn.lock
+yarn.lock
 
 .eslintrc.cjs
