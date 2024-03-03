@@ -7,6 +7,7 @@ import InSide from "./pages/views/InSide";
 import Board from "./pages/board/Board";
 import Profile from "./pages/profile/Profile";
 
+// test용 주석입니다.
 function App() {
   return (
     <>
